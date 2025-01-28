@@ -1,0 +1,220 @@
+/* ************************************************ */
+/* Global Styles */
+/* ************************************************ */
+
+/* Hero Section */
+#about-hero {
+    background: url('/src/assets/images/hero-bg-dragon.png');
+    background-color: #90C2E7;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-hero .cs-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(6.25rem, 25vw, 12.5rem);
+}
+
+#about-hero .cs-content {
+    max-width: 59.6875rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+#about-hero .cs-title {
+    font-size: clamp(3.2rem, 4.4vw, 3.2rem);
+    font-family: 'Haksen';
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: left;
+    width: 100%;
+    max-width: 20ch;
+    margin: 0 0 2rem 0;
+    color: var(--text-purple);
+    position: relative;
+}
+
+#about-hero .cs-color {
+    color: var(--primary);
+}
+
+#about-hero .cs-text {
+    font-size: clamp(1rem, 1.95vw, 1.25rem);
+    line-height: 1.5em;
+    text-align: left;
+    width: 100%;
+    max-width: 39.375rem;
+    margin: 0 0 2rem 0;
+    color: var(--text-purple);
+}
+
+#about-hero .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+#about-hero .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-half img {
+    width: 70vw;
+}
+
+.chef-img img {
+    height: 100%;
+    box-shadow: 15px 15px var(--text-purple);
+}
+
+/* ************************************************ */
+/* Media Queries */
+/* ************************************************ */
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #about-hero {
+        padding-top: 110px;
+        padding-bottom: clamp(6.25rem, 25.95vw, 15.625rem);
+    }
+
+    #about-hero-right {
+        order: -1;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #about-hero-left {
+        order: 2;
+    }
+
+    .hero-half img {
+        width: 70vw;
+    }
+
+    #about-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-image-div {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #chef-pic-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chef-img img {
+        width: 100%
+    }
+
+    .half-div {
+        height: 100%;
+    }
+
+    .chef-img {
+        max-width: 500px;
+    }
+
+
+    #about-core-values {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .car {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .car img{
+        padding-top: 40px;
+        max-width: 100%;
+    }
+
+}
+
+/* Desktop - 1024px and above */
+@media only screen and (min-width: 64rem) {
+    #about-hero {
+        padding-top: 280px;
+        flex-direction: row;
+        gap: 50px;
+        max-height: 780px;
+        align-items: center;
+    }
+
+    #about-hero-left {
+        order: 2;
+    }
+
+    #about-hero-right {
+        order: 1;
+    }
+
+    .hero-half img {
+        width: 45vw;
+    }
+
+    #about-body {
+        flex-direction: row;
+    }
+
+    #about-image-div {
+        flex-direction: row;
+        align-items: flex-end;
+        width: 80%;    
+    }
+
+    #chef-pic-div {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .left-div {
+        max-width: 520px;
+    }
+
+    #about-core-values {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #about-core-values .left-div {
+        order: 2;
+    }
+
+    #about-core-values .right-div {
+        order: 1;
+        display: flex;
+        align-content: start;
+    }
+
+
+}

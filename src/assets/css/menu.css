@@ -1,0 +1,48 @@
+body {
+    background-color: #FFFFFF;
+}
+
+.food-row {
+    justify-content: center;
+}
+
+.food-row-title {
+    text-align: center;
+}
+
+#announcement-h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+
+    #menu-hero-section {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    h1 {
+        font-size: 3.6rem;
+        font-family: 'Haksen';
+        font-weight: 400;
+        line-height: 1.2em;
+        text-align: left;
+        width: 100%;
+        max-width: 20ch;
+        margin: 0 0 2rem 0;
+        color: var(--text-purple);
+        /* text-shadow: 2px 2px #E84C3D; */
+        position: relative;
+    }
+
+
+    .food-grid-section {
+        margin-bottom: 3rem;
+    }
+
+}

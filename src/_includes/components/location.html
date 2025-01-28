@@ -1,0 +1,18 @@
+<section id="location-section">
+    <div id="location-inner-wrapper">
+        <div id="location-left" class="half-div">
+            <h2 class="red">Come Find Us</h2>
+            <p>Dive into a culinary adventure with WaWah’s and savor the unique blend of bold, inventive flavors our menu has to offer. Whether you’re craving a quick bite or a full feast, our dishes promise a taste experience that’s as delightful as it is unique. Don't just take our word for it, come and try us out today.</p>
+            <button class="yellow-btn btn" onclick="openDirections()">GET DIRECTIONS</button>
+        </div>
+        <div id="location-right" class="half-div location-iframe">
+            <iframe class="location-component-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12090.51491342992!2d-73.85952572229004!3d40.74819434830681!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25fdaf64740e7%3A0x77560c780fbedd10!2sQueens%20Night%20Market!5e0!3m2!1sen!2sus!4v1718672784246!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+<script>
+    function openDirections() {
+        window.open("https://www.google.com/maps/dir/?api=1&origin=current+location&destination=4701+111th+St,+Queens,+NY+11368", "_blank");
+    }
+</script>

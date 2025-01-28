@@ -1,0 +1,122 @@
+---
+layout: '/layouts/base.njk'
+title: Wawah's - Dive into Chino-Latino Flavors
+description: Dive into Chino-Latino flavors with WaWah's. Experience classic Chinese American cuisine infused with Latin Sazon. From bowls and plates to popular entrees like Lomo Saltado and Garlic Mojo Shrimp, our menu offers a unique culinary adventure. Visit us today and savor our inventive, chef-driven dishes. Follow us on Instagram @eatwawahs for more updates. Get directions to WaWah's now!
+permalink: /
+ss: homepage
+
+---    
+<!-- Hero -->
+<section id="homepage-hero">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      
+      <div class="swiper-slide" style="background-image: url('assets/images/food/hero-food-8.webp')">
+        <div class="cs-container half-div" id="homepage-hero-left">
+          <div class="cs-content">
+            <h1 class="cs-title">Dive into Chino-Latino Flavors</h1>
+            <p class="cs-text bold">Classic Chinese American Cuisine with a Latin Sazon.</p>
+            <button class="yellow-btn btn" onclick="location.href='/menu';">VIEW MENU</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" style="background-image: url('assets/images/food/hero-food-11.webp')">
+          <div class="cs-container half-div" id="homepage-hero-left">
+            <div class="cs-content">
+              <h1 class="cs-title">Dive into Chino-Latino Flavors</h1>
+              <p class="cs-text bold">Classic Chinese American Cuisine with a Latin Sazon.</p>
+              <button class="yellow-btn btn" onclick="location.href='/menu';">VIEW MENU</button>
+            </div>
+          </div>
+      </div>
+
+      <div class="swiper-slide" style="background-image: url('assets/images/food/hero-food-10.webp')">
+          <div class="cs-container half-div" id="homepage-hero-left">
+            <div class="cs-content">
+              <h1 class="cs-title">Dive into Chino-Latino Flavors</h1>
+              <p class="cs-text bold">Classic Chinese American Cuisine with a Latin Sazon.</p>
+              <button class="yellow-btn btn" onclick="location.href='/menu';">VIEW MENU</button>
+            </div>
+          </div>
+      </div>
+
+      <div class="swiper-slide" style="background-image: url('assets/images/food/hero-food-14.webp')">
+          <div class="cs-container half-div" id="homepage-hero-left">
+            <div class="cs-content">
+              <h1 class="cs-title">Dive into Chino-Latino Flavors</h1>
+              <p class="cs-text bold">Classic Chinese American Cuisine with a Latin Sazon.</p>
+              <button class="yellow-btn btn" onclick="location.href='/menu';">VIEW MENU</button>
+            </div>
+          </div>
+      </div>
+
+    </div>
+    <!-- Add Pagination if needed -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation if needed -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <!-- Background Image -->
+  <picture class="cs-background">
+    <source media="(max-width: 600px)" srcset="assets/images/hero-bg-dragon.png">
+    <img loading="lazy" decoding="async" src="assets/images/hero-bg-dragon.png" alt="Background Image">
+  </picture>
+</section>
+<!-- End Hero -->
+  
+  
+  <!-- Menu -->
+  <section class="food-grid-section">
+    <h2 class="food-row-title">Best Sellers at Queens Night Market</h2>
+    <div class="food-row">
+        <div class="food-tile">
+            <picture>
+                <source media="(max-width: 600px)" srcset="assets/images/food/costillas-bbq-spare-ribs.webp">
+                <img loading="lazy" decoding="async" src="assets/images/food/costillas-bbq-spare-ribs.webp" alt="Costillas BBQ Spare Ribs">    
+            </picture>
+            <h3 class="food-tile-title">Costillas BBQ</h3>
+            <p class="food-tile-description">1 pc. Grilled Spareribs</p>
+        </div>
+        <div class="food-tile">
+            <picture>
+                <source media="(max-width: 600px)" srcset="assets/images/food/bistec-asado.webp">
+                <img loading="lazy" decoding="async" src="assets/images/food/bistec-asado.webp" alt="Bistec Asado Spare Ribs">    
+            </picture>
+            <h3 class="food-tile-title">Bistec Asado</h3>
+            <p class="food-tile-description">2 pc. Grilled Short Ribs</p>
+        </div>
+        <div class="food-tile">
+            <picture>
+                <source media="(max-width: 600px)" srcset="assets/images/food/chaulafan-fried-rice.webp">
+                <img loading="lazy" decoding="async" src="assets/images/food/chaulafan-fried-rice.webp" alt="Chaulafan Fried Rice">    
+            </picture>
+            <h3 class="food-tile-title">Chaulafan</h3>
+            <p class="food-tile-description">Fried Rice</p>
+        </div>
+    </div>
+    <button class="yellow-btn btn" onclick="location.href='/menu';">VIEW MENU</button>
+  </section>
+  
+  {% catering %}
+  {% location %}
+  {% socialMedia %}
+  
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  });
+  </script>

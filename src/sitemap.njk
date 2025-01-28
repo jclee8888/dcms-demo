@@ -1,0 +1,21 @@
+---
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {%- for page in collections.all -%}
+    {%- if page.url and page.data.sitemapIgnore !== true and page.url != "/sitemap.xml" -%}
+      <url>
+        {# change to client website #}
+        <loc>https://wawahs.com{{ page.url | url }}</loc> 
+        <lastmod>{{ page.date.toISOString() }}</lastmod>
+        <changefreq>monthly</changefreq>
+        {%- if page.url == "/" -%}
+          <priority>1.0</priority>
+        {%- else -%}
+          <priority>0.5</priority>
+        {%- endif -%}      
+      </url>
+    {%- endif -%}
+  {%- endfor -%}
+</urlset>
