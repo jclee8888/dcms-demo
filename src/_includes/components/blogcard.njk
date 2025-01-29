@@ -1,0 +1,13 @@
+<li class="blog-card">
+    <img src="{{ blog.image }}">
+    <h2><a href="https://demo.dotcms.com/blog/post/{{ blog.urlTitle }}">{{ blog.title }}</a></h2>
+    <p>{{ blog.teaser }}</p>
+    <p class="small-text"><strong>Author:</strong> 
+        {% for author in blog.author %}
+            {{ author.firstName }} {{ author.lastName }}{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+    <p class="small-text"><strong>Published on:</strong> {{ blog.publishDate }}</p>
+    <p class="small-text"><strong>Tags:</strong> {{ blog.tags | join(", ")  }}</p>
+    <a href="https://demo.dotcms.com/blog/post/{{ blog.urlTitle }}">Read more →</a>
+</li>

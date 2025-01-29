@@ -35,6 +35,11 @@ module.exports = function (eleventyConfig) {
         return fs.readFileSync(filePath, "utf8");
       });
 
+      eleventyConfig.addShortcode("blogcard", function() {
+        const filePath = path.join(__dirname, "src", "_includes", "components", "blogcard.njk");
+        return fs.readFileSync(filePath, "utf8");
+      });
+
     // allows 11ty to look for auto updates to trigger hot-reload
     eleventyConfig.addWatchTarget("./src/assets/css");
     eleventyConfig.addWatchTarget("./src/assets/js");

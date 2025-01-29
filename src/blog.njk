@@ -1,0 +1,27 @@
+---
+title: Blog
+layout: '/layouts/base.njk'
+permalink: /blog.html
+ss: blog
+pagination:
+    data: blogs
+    size: 6
+    alias: blogItems
+---
+<div class="header-bg-div"></div>
+<section id="menu-hero-section">
+    <div id="menu-hero-div">
+        <span class="page-title-label">Blog</span>
+        <h1>Learn from our Content Partners</h1>
+        <p class="cs-text">Indulge in our education section</p>
+    </div>
+</section>
+
+
+<section>
+    <ul class="blogcard-row">
+        {% for blog in blogItems %}
+            {% include 'components/blogcard.njk' %}
+        {% endfor %}
+    </ul>
+</section>
