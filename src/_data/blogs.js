@@ -20,6 +20,9 @@ const QUERY = `
             firstName
             lastName
         }
+        titleImage {
+            versionPath
+        }
     }
 }`;
 

@@ -2,14 +2,6 @@ body {
     background-color: #FFFFFF;
 }
 
-.food-row {
-    justify-content: center;
-}
-
-.food-row-title {
-    text-align: center;
-}
-
 #announcement-h2 {
     text-align: center;
     font-size: 30px;
@@ -18,13 +10,6 @@ body {
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
 
-    #menu-hero-section {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 40px;
-    }
 
     h1 {
         font-size: 3.6rem;
@@ -38,11 +23,6 @@ body {
         color: var(--text-purple);
         /* text-shadow: 2px 2px #E84C3D; */
         position: relative;
-    }
-
-
-    .food-grid-section {
-        margin-bottom: 3rem;
     }
 
 }
@@ -71,4 +51,9 @@ h2 a {
 .small-text {
     font-size: 15px;
     font-family: 'Merriweather'
+}
+
+.blogcard-img {
+    width: 433px;
+    height: 264px;
 }

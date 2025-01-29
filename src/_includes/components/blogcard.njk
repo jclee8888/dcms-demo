@@ -1,5 +1,13 @@
 <li class="blog-card">
-    <img src="{{ blog.image }}">
+
+
+
+    {% if blog.titleImage and blog.titleImage.versionPath %}
+        <img src="https://demo.dotcms.com{{ blog.titleImage.versionPath }}" alt="{{ blog.title }}" class="blogcard-img">
+    {% else %}
+        <p>No image available.</p>
+    {% endif %}
+
     <h2><a href="https://demo.dotcms.com/blog/post/{{ blog.urlTitle }}">{{ blog.title }}</a></h2>
     <p>{{ blog.teaser }}</p>
     <p class="small-text"><strong>Author:</strong> 
