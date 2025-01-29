@@ -1,4 +1,4 @@
-const fetchBlogs = require('./src/_data/blogs'); // Adjust the path if your blogs.js is elsewhere
+const fetchBlogs = require('./src/_data/blogs');
 const fetchGraphBlogs = require('./src/_data/graphBlogs');
 
 // Call the function and log the output
