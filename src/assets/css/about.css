@@ -85,6 +85,11 @@
     box-shadow: 15px 15px var(--text-purple);
 }
 
+
+#about-body-container {
+    max-width: 1360px;
+    margin: 0 auto;
+}
 /* ************************************************ */
 /* Media Queries */
 /* ************************************************ */

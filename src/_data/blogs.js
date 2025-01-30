@@ -6,7 +6,7 @@ const username = process.env.DOTCMS_USERNAME;
 const password = process.env.DOTCMS_PASSWORD;
 
 const AUTH_HEADER = 'Basic ' + Buffer.from(`${username}:${password}`).toString('base64');
-
+console.log('AUTH_HEADER');
 // GraphQL Query
 const QUERY = `
 {
