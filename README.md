@@ -46,11 +46,17 @@ npm install
 
 ### **3. Setup Environment Variables**
 create a .env file in root directory and add
-DOTCMS_USERNAME
-DOTCMS_PASSWORD
+```sh
+DOTCMS_USERNAME=your_dot_cms_username
+DOTCMS_PASSWORD=your_dotcms_password
+```
 
 ### **4. Run Server**
 ```sh
 npm start
 ```
+
+Now, visit http://localhost:8080 to view the project locally.
+
+
 
